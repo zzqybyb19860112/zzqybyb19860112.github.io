@@ -212,10 +212,6 @@
         "source": "C:\\Users\\zzqybyb19860112\\.android\\build-cache\\2707a93a54f795841f7d3071620a82009b9213d9\\output\\res\\layout\\notification_template_custom_big.xml"
     },
     {
-        "merged": "G:\\MyCode\\JavaMailApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_send.xml",
-        "source": "G:\\MyCode\\JavaMailApp\\app\\src\\main\\res\\layout\\activity_send.xml"
-    },
-    {
         "merged": "G:\\MyCode\\JavaMailApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\zzqybyb19860112\\.android\\build-cache\\2707a93a54f795841f7d3071620a82009b9213d9\\output\\res\\layout\\notification_template_part_time.xml"
     },
@@ -242,10 +238,6 @@
     {
         "merged": "G:\\MyCode\\JavaMailApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\zzqybyb19860112\\.android\\build-cache\\2707a93a54f795841f7d3071620a82009b9213d9\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "G:\\MyCode\\JavaMailApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mail.xml",
-        "source": "G:\\MyCode\\JavaMailApp\\app\\src\\main\\res\\layout\\activity_mail.xml"
     },
     {
         "merged": "G:\\MyCode\\JavaMailApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
