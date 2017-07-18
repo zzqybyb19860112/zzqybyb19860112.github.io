@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\EmailDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "F:\\EmailDemo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\EmailDemo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",
+        "source": "F:\\EmailDemo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    }
+]

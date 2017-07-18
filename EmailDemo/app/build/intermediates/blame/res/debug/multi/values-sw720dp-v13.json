@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "F:\\EmailDemo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 68,
+                    "endOffset": 119
+                },
+                "from": {
+                    "file": "C:\\Users\\zzqybyb19860112\\.android\\build-cache\\6e08f7d2af8246019db561748e0c0b21b721bf01\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 68,
+                        "endOffset": 119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 124,
+                    "endColumn": 68,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "C:\\Users\\zzqybyb19860112\\.android\\build-cache\\6e08f7d2af8246019db561748e0c0b21b721bf01\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 124,
+                        "endColumn": 68,
+                        "endOffset": 188
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <EditText
+        android:id="@+id/send_email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="你要发送的邮件地址"
+        />
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送邮件"
+        />
+
+    <Button
+        android:id="@+id/accept_email"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收邮件"
+        />
+    <Button
+        android:id="@+id/open_folder"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开文件夹"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/email_message_rv"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>

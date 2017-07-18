@@ -1,0 +1,87 @@
+-- Merging decision tree log ---
+manifest
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:7:5-24:19
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\6c8571be8b7866ce301f79ff3a88029e2103f89b\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\1e7c3005acf1ff1caca2c5f1c65827597a1b3442\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\725cabe803d3608d9248f2def9f7a851a781b4c2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\4d17412cd3f3a697811682008973af0098df9226\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\25b7e3abb27b93e785b606ce52367f11f7068f33\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\0e7449932d5a1188ec474a283288286431b6d2eb\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\dc6f174a2c4a491156399110ccfa09978f2fb29e\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\zzqybyb19860112\.android\build-cache\b784a7fb654bd6f1378bdb6df95bc60458bf48ab\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\fa45dc6ee78ac47b3246de82fd40aff83da30948\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\15f1888902f5e51bddd79d9f66bf23beb675c1ee\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:11:9-41
+	android:supportsRtl
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:13:9-35
+	android:roundIcon
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:12:9-54
+	android:allowBackup
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:9:9-35
+	android:icon
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:10:9-43
+	android:theme
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:8:9-28
+activity#com.ybyb.zzq.h_know.ui.main.MainActivity
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:15:19-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:17:17-68
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:19:17-76
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:19:27-74
+activity#com.ybyb.zzq.h_know.ui.infolist.InfoListActivity
+ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:22:9-23:20
+	android:name
+		ADDED from G:\H-Know\app\src\main\AndroidManifest.xml:22:19-63
+uses-sdk
+INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [io.realm:realm-android-library:3.3.1] C:\Users\zzqybyb19860112\.android\build-cache\e93d164e11b8faf0cc37e25405f274c43fedfa85\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\zzqybyb19860112\.android\build-cache\139a7abe3dfa51e41b419c10293625494240cf2b\output\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\6c8571be8b7866ce301f79ff3a88029e2103f89b\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\1e7c3005acf1ff1caca2c5f1c65827597a1b3442\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\725cabe803d3608d9248f2def9f7a851a781b4c2\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\4d17412cd3f3a697811682008973af0098df9226\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\25b7e3abb27b93e785b606ce52367f11f7068f33\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\0e7449932d5a1188ec474a283288286431b6d2eb\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\dc6f174a2c4a491156399110ccfa09978f2fb29e\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\zzqybyb19860112\.android\build-cache\b784a7fb654bd6f1378bdb6df95bc60458bf48ab\output\AndroidManifest.xml:5:5-7:41
+MERGED from [io.reactivex:rxandroid:1.0.1] C:\Users\zzqybyb19860112\.android\build-cache\dab98954a58399642924df354a41375e6f1bc2a2\output\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:recyclerview-v7:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\4db536bc6d83bbc6946d0badeeee67b89a14fb58\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\fa45dc6ee78ac47b3246de82fd40aff83da30948\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\15f1888902f5e51bddd79d9f66bf23beb675c1ee\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.0] C:\Users\zzqybyb19860112\.android\build-cache\6c8571be8b7866ce301f79ff3a88029e2103f89b\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
+		INJECTED from G:\H-Know\app\src\main\AndroidManifest.xml
