@@ -1,10 +1,10 @@
 [
     {
-        "merged": "G:\\RxJavaStudy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
-        "source": "G:\\RxJavaStudy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "D:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "D:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "G:\\RxJavaStudy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
-        "source": "G:\\RxJavaStudy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "D:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "D:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     }
 ]

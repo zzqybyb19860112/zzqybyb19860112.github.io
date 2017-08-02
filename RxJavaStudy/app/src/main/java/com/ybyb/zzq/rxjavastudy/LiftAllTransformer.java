@@ -5,7 +5,7 @@ import rx.Subscriber;
 
 /**
  * 作者：周正权 on 2017/5/17
- * 邮箱：zhouzhengquan@shixinyun.com
+ * 邮箱：417986033@qq.com
  */
 
 public class LiftAllTransformer implements Observable.Transformer<Integer, String> {

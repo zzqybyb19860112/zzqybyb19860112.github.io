@@ -3,6 +3,7 @@ package com.ybyb.zzq.rxjavastudy;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -125,9 +126,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void call(Subscriber<? super Object> subscriber) {
                 String url="http://www.baidu.com";
-                mWebView.loadUrl(url);
+                subscriber.onNext(url);
+                Toast.makeText(MainActivity.this,"call----"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
+            }
+        }).subscribeOn(AndroidSchedulers.mainThread())
+        .doOnSubscribe(new Action0() {
+            @Override
+            public void call() {
+                Toast.makeText(MainActivity.this,"主线程中执行吐司提示！"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
+            }
+        }).subscribeOn(AndroidSchedulers.mainThread())
+        .observeOn(AndroidSchedulers.mainThread())
+        .subscribe(new Subscriber<Object>() {
+            @Override
+            public void onCompleted() {
+                Toast.makeText(MainActivity.this,"onCompleted---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Toast.makeText(MainActivity.this,"onError---"+Thread.currentThread().getName()+"---"+e.toString(),Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNext(Object o) {
+                Toast.makeText(MainActivity.this,"onNext---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
+                mWebView.loadUrl((String)o);
                 WebSettings settings = mWebView.getSettings();
                 settings.setJavaScriptEnabled(true);
+                settings.setDomStorageEnabled(true);
                 mWebView.setWebViewClient(new WebViewClient(){
                     @Override
                     public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -137,34 +164,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         return true;
                     }
                 });
-                Log.e("tag","name-1-->"+Thread.currentThread().getName());
-            }
-        }).subscribeOn(AndroidSchedulers.mainThread())
-        .doOnSubscribe(new Action0() {
-            @Override
-            public void call() {
-                Toast.makeText(MainActivity.this,"主线程中执行吐司提示！",Toast.LENGTH_SHORT).show();
-                Log.e("tag","name-2-->"+Thread.currentThread().getName());
-            }
-        }).subscribeOn(AndroidSchedulers.mainThread())
-        .observeOn(AndroidSchedulers.mainThread())
-        .subscribe(new Subscriber<Object>() {
-            @Override
-            public void onCompleted() {
-                Toast.makeText(MainActivity.this,"onCompleted！",Toast.LENGTH_SHORT).show();
-                Log.e("tag","name-3-->"+Thread.currentThread().getName());
-            }
-
-            @Override
-            public void onError(Throwable e) {
-                Toast.makeText(MainActivity.this,"onError！"+e.toString(),Toast.LENGTH_SHORT).show();
-                Log.e("tag","name-3-->"+Thread.currentThread().getName());
-            }
-
-            @Override
-            public void onNext(Object o) {
-                Toast.makeText(MainActivity.this,"onNext！"+o.toString(),Toast.LENGTH_SHORT).show();
-                Log.e("tag","name-3-->"+Thread.currentThread().getName());
             }
         });
     }
@@ -232,13 +231,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             @Override
             public void onNext(Course course) {
-                Toast.makeText(MainActivity.this,"学科："+course.getName()+"，得分："+course.getScore(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"学科："+course.getName()+"，得分："+course.getScore()+"---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
             }
         };
         Observable.from(students).flatMap(new Func1<Student, Observable<Course>>() {
             @Override
             public Observable<Course> call(Student student) {
-                Toast.makeText(MainActivity.this,student.getName(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,student.getName()+"---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
                 return Observable.from(student.getCourses());
             }
         }).subscribe(subscriber);
@@ -249,6 +248,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             .map(new Func1<Integer, Bitmap>() {//Fuc*方法表示有返回值，Action*方法表示无返回值，*的个数表示参数的个数
                 @Override
                 public Bitmap call(Integer integer) {
+                    Toast.makeText(MainActivity.this,"thread---call---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
                     return BitmapFactory.decodeResource(getResources(),integer);
                 }
             }).subscribeOn(Schedulers.io())
@@ -256,7 +256,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                   .subscribe(new Action1<Bitmap>() {
             @Override
             public void call(Bitmap bitmap) {
-                Toast.makeText(MainActivity.this,"map",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"map---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
                 mTestIv.setVisibility(View.VISIBLE);
                 mTestIv.setImageBitmap(bitmap);
             }
@@ -268,22 +268,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void call(Subscriber<? super Drawable> subscriber) {
                 Drawable drawable = getResources().getDrawable(R.drawable.test2);
+                Looper.prepare();
+                Toast.makeText(MainActivity.this,"thread---call---"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
                 subscriber.onNext(drawable);
                 subscriber.onCompleted();
+                Looper.loop();
             }
         }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Drawable>() {
             @Override
             public void onCompleted() {
-                Toast.makeText(MainActivity.this, "onCompleted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "onCompleted---"+Thread.currentThread().getName(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onError(Throwable e) {
-                Toast.makeText(MainActivity.this, "onError" + e.toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "onError---" + e.toString(), Toast.LENGTH_SHORT).show();
+                Log.e("tag",e.toString());
             }
 
             @Override
             public void onNext(Drawable drawable) {
+                Toast.makeText(MainActivity.this,"thread---onNext----"+Thread.currentThread().getName(),Toast.LENGTH_SHORT).show();
                 mTestIv.setVisibility(View.VISIBLE);
                 mTestIv.setImageDrawable(drawable);
             }
@@ -294,7 +299,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Observable.just(1, 2, 3, 4).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Action1<Integer>() {
             @Override
             public void call(Integer integer) {
-                Toast.makeText(MainActivity.this, "number=" + integer, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "number=" + integer+"---"+Thread.currentThread().getName(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -310,12 +315,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }).subscribe(new Observer<Drawable>() {
             @Override
             public void onNext(Drawable drawable) {
+                Toast.makeText(MainActivity.this, "onNext", Toast.LENGTH_SHORT).show();
                 mTestIv.setVisibility(View.VISIBLE);
                 mTestIv.setImageDrawable(drawable);
             }
 
             @Override
             public void onCompleted() {
+                Toast.makeText(MainActivity.this, "onCompleted", Toast.LENGTH_SHORT).show();
             }
 
             @Override

@@ -1,4 +1,7 @@
-#Tue Jun 06 15:39:12 CST 2017
-base.0=G\:\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=G\:\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Wed Aug 02 09:26:39 CST 2017
+base.0=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_56d97ab4e57415ce9679f93b807baa7c6aaa4a53
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8f43c5093e0e99a6ffe57ea90e8b747100d51cec\\classes.dex
+base.1=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8f43c5093e0e99a6ffe57ea90e8b747100d51cec
+file.0=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_56d97ab4e57415ce9679f93b807baa7c6aaa4a53\\classes.dex

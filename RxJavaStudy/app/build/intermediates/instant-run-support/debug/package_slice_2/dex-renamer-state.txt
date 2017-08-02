@@ -1,0 +1,4 @@
+#Wed Aug 02 09:26:38 CST 2017
+base.0=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
+renamed.0=classes.dex
+file.0=D\:\\zzqybyb19860112.github.io\\RxJavaStudy\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex
